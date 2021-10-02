@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab 2</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./screenshots/image_handler.jpeg" >
+    <body>
+        <main>
+            <section class="nav-bar">
+                <nav>
+                    <a href="#attendees-list">Attendees List</a> |
+                    <a href="#meeting-agenda">Agenda</a> |
+                    <a href="#meeting-previous">Previous Meetings</a> |
+                    <a href="#forms">Forms</a>
+                </nav>
+            </section>
+
+            <hr>
+
+            <header class="title-header">
+                <h1>Red Panda's product meeting</h1>
+                <h2>Idea/discussion</h2>
+                <h3>October 2nd, 2021</h3>
+            </header>
+
+            <hr>
+
+            <section id="attendees-list">
+                <h1>Attendees for today</h1>
+                <ul>
+                    <li>Amitesh</li>
+                    <li>Tom</li>
+                    <li>Kyrie</li>
+                    <li>Matthew</li>
+                    <li>Kristen</li>
+                    <li>Jamie</li>
+                    <li>Jane</li>
+                    <li>Lisa</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="meeting-agenda">
+                <div>
+                    <h1>Today's agenda</h1>
+                </div>
+
+                <ol>
+                    <li>Discuss any ideas to add to our product</li>
+                    <li>Determine if features already discussed are worth it.</li>
+                    <li>Determine a deadline for beta testing</li>
+                </ol>
+            </section>
+
+            <hr>
+
+            <div id="meeting-previous">
+                <p><b>From last meeting: </b> we need to finish up discussing plans for where to deploy the website and how much should we charge for the yearly and monthly plans. <br/>
+                    <i>We confirmed last meeting to drop some designs on the homepage so that should not be an issue anymore. <strong>No more discussions on this</strong> <br/> </i> 
+                    <em>Confirmed with design that we are up to date.</em> <br/>
+                    Need to finish discussing the latest drop and ensure all features are added.
+                </p>
+            </div>
+
+            <br/>
+
+            <span class="meeting-overview">
+                <p><b>This meeting: </b>As mentioned above, we want to determine deadlines, discuss latest features ideas and any other ideas that you guys want to bring up.</p>
+            </span>
+
+            <hr>
+
+            <section class="comments-section">
+                <h1>Comments/questions</h1>
+                <p>Kyrie has brought up some questions about customer usability on the home page form, so we can discuss that. <br/>
+                    Tom has mentioned there is some bugs with the contacts page with submitting a form. 
+                </p>
+                <p><b>Any other comments??</b></p>
+            </section>
+
+            <hr>
+
+            <section class="diagram">
+                <h1>Diagram</h1>
+                <img src="./screenshots/diagram.jpeg">
+            </section>
+
+            <hr>
+
+            <br/>
+
+            <span class="audio">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                </audio>
+            </span>
+
+            <br/>
+            <br/>
+
+            <span>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                  </video>
+            </span>
+
+            <hr>
+
+            <br/>
+            
+            <div class="summary-div">
+                <details>
+                    <summary>Red Panda's drop 4</summary>
+                    <p>We have plans to reach about 1 million customers in about 2 years time, with 900k coming in the first year. This product will be revolutionary and will change the lives of many. We can do this guys!</p>
+                </details>
+            </div>
+
+            <br/>
+
+            <hr>
+
+            <footer>
+                <p>Meeting lead: Amitesh Sharma</p>
+                <p><a href="https://www.google.com">Email me for any questions: aks004@ucsd.edu</a></p>
+            </footer>
+
+            <br/>
+            <br/>
+
+            <section id="forms">
+                <form>
+                    <fieldset>
+                      <legend>Comments>:</legend>
+                      <label for="name">Your name:</label>
+                      <input type="text" id="name" name="name"><br><br>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email"><br><br>
+                      <input type="submit" value="Submit">
+                    </fieldset>
+                  </form>
+
+                  <br/>
+                  
+                  <form>
+                    <label for="browser">Choose your favorite language from the list:</label>
+                    <input list="languages" name="browser" id="browser">
+                    <datalist id="languages">
+                      <option value="JavaScript">
+                      <option value="Python">
+                      <option value="C++">
+                      <option value="Ruby">
+                      <option value="Scala">
+                    </datalist>
+                    <input type="submit">
+                  </form>
+
+                  <br/>
+                  <br/>
+
+                  <form>
+                    <label for="red-pandas">Review of Red Pandas inc.</label>
+                    <textarea id="red-pandas" name="red-pandas" rows="4" cols="40">
+                      Please leave a review for red pandas if you have any. Thank you!
+                    </textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+
+                  <br/>
+                  <br/>
+
+                  <form>
+                    <label for="food">Favorite Food:</label>
+                    <select name="food" id="food">
+                      <option value="volvo">Pizza</option>
+                      <option value="saab">Drunken Noodles</option>
+                      <option value="opel">Orange Chicken</option>
+                      <option value="audi">Chicken tika Masala</option>
+                    </select>
+                    <input type="submit" value="Submit">
+                  </form>
+            </section>
+
+            <hr>
+            <hr>
+
+            <br/>
+
+            <div>
+                <button>Click me!</button>
+                <br/>
+
+                <input type="checkbox" id="bike" name="bike" >
+                <label for="bike"> I Ride my bike to work!</label><br>
+
+                <input type="radio" id="car" name="car">
+                <label for="car">I drive my car to work!</label><br/>
+
+                <input type="date">
+            </div>
+        </main>
+    </body>
+</html>
