@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(194, 240, 253);
+    color: rgba(56, 56, 56, 1);
+}
+
+#meeting-title {
+    color:rgb(43, 14, 206);
+}
+
+#meeting-type {
+   color: #1044d1; 
+}
+
+#meeting-date {
+    color: hsl(220, 100%, 60%);
+}
