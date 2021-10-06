@@ -8,6 +8,32 @@ body {
     margin-left: 2.5em;
 }
 
+main {
+    overflow: scroll;
+    height: 100vh;
+}
+
+/* This item is absolutely positioned on the top right */
+.absolute-positioned {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: rgb(57, 168, 172);
+    color: white;
+    padding: 10px;
+    min-width: 350px;
+    z-index: 20;
+}
+
+.absolute-positioned p {
+    color: white;
+}
+
+.absolute-positioned div {
+    display: inline-block;
+    color: rgb(27, 253, 7);
+}
+
 /* The nav-bar styling */
 .nav-bar {
     display: flex;
@@ -15,9 +41,13 @@ body {
     border-style: solid;
     border-color: rgb(0, 26, 255);
     border-width: 0.05cm; 
+    background-color: aquamarine;
     border-radius: 1vh; 
     padding-left: 1vw; 
     align-items: center;
+    position: sticky;
+    top: 0.25vh;
+    z-index: 10;
 }
 
 .nav-bar h4 {
@@ -48,9 +78,20 @@ body {
     margin-top: -10px
 }
 
+/* The flexbox for the agenda and attendees list */
+.agenda-attendees {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
 /* The styling for the attendance list */
 #attendees-list {
     padding: 10px 0 10px 0;
+    min-height: 25vh;
+    padding-right: 10vw;
 }
 
 .attendees-title {
@@ -61,4 +102,40 @@ body {
 
 #attendees-list li {
     color: rgb(139, 22, 194);
+}
+
+/* The meeting agenda */
+#meeting-agenda {
+    padding: 10px 0 10px 0;
+    min-height: 25vh;
+}
+
+/* The grid layout for the previous meeting notes and overview */
+.previous-overview {
+    display: grid;
+    grid-template-columns: [first] 45% [second] 50%;
+    column-gap: 20px;
+    justify-items: center;
+}
+
+/* The comments section */
+.comments-section p {
+    max-width: 400px;
+}
+
+/* Styling on the video, img, and audio */
+.diagrams {
+    display: flex;
+    justify-content: space-around;
+}
+
+img, audio, video {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+/* Hidden text */
+.hidden-text {
+    display: none;
 }
