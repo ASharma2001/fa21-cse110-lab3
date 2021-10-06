@@ -19,6 +19,10 @@
 
             <hr>
 
+            <div class="absolute-positioned"> 
+                <p>This is an absolute <div>This is an inline-block element</div> positioned element </p>
+            </div>
+
             <header class="title-header">
                 <h1 id="meeting-title">Red Panda's product meeting</h1>
                 <h2 id="meeting-type">Idea/discussion</h2>
@@ -27,46 +31,48 @@
 
             <hr>
 
-            <section id="attendees-list">
-                <h2 class="attendees-title">Attendees for today</h2>
-                <ul class="attendees-names">
-                    <li>Amitesh</li>
-                    <li>Tom</li>
-                    <li>Kyrie</li>
-                    <li>Matthew</li>
-                    <li>Kristen</li>
-                    <li>Jamie</li>
-                    <li>Jane</li>
-                    <li>Lisa</li>
-                </ul>
-            </section>
-
-            <hr>
-
-            <section id="meeting-agenda">
-                <h2>Today's agenda</h2>
-
-                <ol>
-                    <li>Discuss any ideas to add to our product</li>
-                    <li>Determine if features already discussed are worth it.</li>
-                    <li>Determine a deadline for beta testing</li>
-                </ol>
-            </section>
-
-            <hr>
-
-            <div id="meeting-previous">
-                <p><b>From last meeting: </b> we need to finish up discussing plans for where to deploy the website and how much should we charge for the yearly and monthly plans. <br/>
-                    <i>We confirmed last meeting to drop some designs on the homepage so that should not be an issue anymore. <strong>No more discussions on this</strong> <br/> </i> 
-                    <em>Confirmed with design that we are up to date.</em> <br/>
-                    Need to finish discussing the latest drop and ensure all features are added.
-                </p>
+            <div class="agenda-attendees">
+                <section id="attendees-list">
+                    <h2 class="attendees-title">Attendees for today</h2>
+                    <ul class="attendees-names">
+                        <li>Amitesh</li>
+                        <li>Tom</li>
+                        <li>Kyrie</li>
+                        <li>Matthew</li>
+                        <li>Kristen</li>
+                        <li>Jamie</li>
+                        <li>Jane</li>
+                        <li>Lisa</li>
+                    </ul>
+                </section>
+    
+                <section id="meeting-agenda">
+                    <h2>Today's agenda</h2>
+    
+                    <ol>
+                        <li>Discuss any ideas to add to our product</li>
+                        <li>Determine if features already discussed are worth it.</li>
+                        <li>Determine a deadline for beta testing</li>
+                    </ol>
+                </section>
             </div>
 
-            <br/>
+            <hr>
 
-            <div class="meeting-overview">
-                <p><b>This meeting: </b>As mentioned above, we want to determine deadlines, discuss latest features ideas and any other ideas that you guys want to bring up.</p>
+            <div class="previous-overview" >
+                <div id="meeting-previous">
+                    <p><b>From last meeting: </b> 
+                        <br/> We need to finish up discussing plans for where to deploy the website and how much should we charge for the yearly and monthly plans. <br/>
+                        <i>We confirmed last meeting to drop some designs on the homepage so that should not be an issue anymore. <strong>No more discussions on this</strong> <br/> </i> 
+                        <em>Confirmed with design that we are up to date.</em> <br/>
+                        Need to finish discussing the latest drop and ensure all features are added.
+                    </p>
+                </div>
+    
+                <div class="meeting-overview">
+                    <p><b>This meeting: </b>
+                    <br/>As mentioned above, we want to determine deadlines, discuss latest features ideas and any other ideas that you guys want to bring up.</p>
+                </div>
             </div>
 
             <hr>
@@ -77,33 +83,29 @@
                     Tom has mentioned there is some bugs with the contacts page with submitting a form. 
                 </p>
                 <p><b>Any other comments??</b></p>
+                <p class="hidden-text">This text is hidden from the page due to have a display: none property</p>
             </section>
 
             <hr>
 
-            <section class="diagram">
-                <h2>Diagram</h2>
-                <img src="./imgs/diagram.jpeg" alt="hello world">
-            </section>
-
-            <hr>
-
-            <br/>
-
-            <span class="audio">
-                <audio controls>
-                    <source src="audio.mp3" type="audio/mpeg">
-                </audio>
-            </span>
-
-            <br/>
-            <br/>
-
-            <span>
-                <video controls>
-                    <source src="video.mp4" type="video/mp4">
-                  </video>
-            </span>
+            <div class="diagrams">
+                <section class="diagram">
+                    <h2>Diagram</h2>
+                    <img src="./imgs/diagram.jpeg" alt="hello world">
+                </section>
+    
+                <span class="audio">
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                    </audio>
+                </span>
+    
+                <span>
+                    <video controls>
+                        <source src="video.mp4" type="video/mp4">
+                        </video>
+                </span>
+            </div>
 
             <hr>
 
